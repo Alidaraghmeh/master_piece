@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OrphanCare</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/b45b3d0665.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+    <link href="//fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <script src="js/jquery-1.9.1.min.js"></script>
+  </head>
+  <body>
+    <section class="fill-height-or-more">
+      <div class="header nav-bar">
+        <table>
+          <tr>
+            <td><img src="images/logo.png" width="auto" height="70" style="margin-left:50px;"></td>
+            <td>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Events.php">Events</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a class="active" href="JoinUS.html">Join US</a></li>
+              </ul>
+            </td>
+            <td><a href="Donate.php"><button class="donate-button">DONATE</button></a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="content">
+        <div class="main wrap">
+					<div id="parentHorizontalTab">
+						<ul class="resp-tabs-list hor_1">
+							<li>SignIn</li>
+							<li>SignUp</li>
+						</ul>
+						<div class="resp-tabs-container hor_1">
+							<div class="login">
+								<form action="SignIn.php" method="post" class="form">
+									<p>Email</p>
+									<input type="email" name="email" required />
+									<p>Password</p>
+									<input type="password" name="password" required class="password" />
+									<input type="submit" value="SignIn" class="info" />
+								</form>
+								<div class="login_forget">
+									<a href="Forgot.html">Forgot Password!</a>
+								</div>
+							</div>
+							<div class="registration">
+								<form action="Signup.php" method="post" class="form">
+									<p>Full Name</p>
+									<input type="text" name="name" required />
+									<p>National ID</p>
+									<input type="text" name="NID" pattern="[0-9]{10}" maxlength="10" required />
+									<p>Phone</p>
+									<input type="text" name="phone" pattern="[0-9]{10}" maxlength="10" required />
+									<p>Date Of Birth</p>
+									<input type="date" name="DOB" required />
+									<p>Gender</p>
+										<input type="radio" name="gender" value="Male" required /> Male
+										<input type="radio" name="gender" value="FeMale" required /> FeMale
+									<br>
+									<p>Address</p>
+									<select name='address' required />
+										<option value='Amman'>Amman</option>
+										<option value='Irbid'>Irbid</option>
+										<option value='Zarqa'>Zarqa</option>
+										<option value='Salt'>Salt</option>
+										<option value='Madaba'>Madaba</option>
+										<option value='Aqaba'>Aqaba</option>
+										<option value='Mafraq'>Mafraq</option>
+										<option value='Jerash'>Jerash</option>
+										<option value='Al Karak'>Al Karak</option>
+										<option value='Ajlon'>Ajlon</option>
+										<option value='Maan'>Maan</option>
+										<option value='Ramtha'>Ramtha</option>
+										<option value='Tafila'>Tafila</option>
+										<option value='Sahab'>Sahab</option>
+										<option value='Dead Sea'>Dead Sea</option>
+									</select>
+									<p>Email</p>
+									<input type="email" name="email" required />
+									<p>Password</p>
+									<input type="password" name="password" id="password1" required />
+									<p>Confirm Password</p>
+									<input type="password" name="Confirm Password" id="password2"  required />
+									<p>Would you like to Volunteer ?</p>
+										<input type="radio" name="volunteer" value="Volunteer" id="yes" required /> Yes
+										<input type="radio" name="volunteer" value="Non-Volunteer" id="no" required /> No
+									<br>
+									<p>Available Time</p>
+									<select name='ATime' id="Available" disabled />
+										<option value=''></option>
+										<option value='Morning' id="First">Morning</option>
+										<option value='Afternoon'>Afternoon</option>
+										<option value='Evening'>Evening</option>
+									</select>
+									<div class="check">
+										<label class="checkbox aa">
+											<input type="checkbox" name="checkbox" required /><i> </i>I accept the terms and conditions
+										</label>
+									</div>
+									<input type="submit" value="Signup"/>
+									<input type="reset" value="Reset" />
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+      </div>
+      <div class="before-footer">
+      </div>
+      <div class="footer">
+        <table>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><p style="float:left;"> &copy 2019 - OrphanCare. All rights reserved. </p></td>
+            <td><p style="text-align: center;"><img src="images/logo.png" width="auto" height="70" style="border-radius: 10%;"></p></td>
+            <td>
+              <ul class="links">
+                <li><a href="http://www.facebook.com"><i class="fa fa-facebook-f" class="icons"></i></a></li>
+                <li><a href="http://www.twitter.com/"><i class="fa fa-twitter" class="icons"></i></a></li>
+                <li><a href="http://www.linkedin.com/"><i class="fa fa-linkedin" class="icons"></i></a></li>
+                <li><a href="http://www.pinterest.com/"><i class="fa fa-instagram" class="icons"></i></a></li>
+                <li><a href="https://plus.google.com"><i class="fa fa-google-plus" class="icons"></i></a></li>
+              </ul>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function() {
+    	//Horizontal Tab
+    	$('#parentHorizontalTab').easyResponsiveTabs({
+    		type: 'default', //Types: default, vertical, accordion
+    		width: 'auto', //auto or any width like 600px
+    		fit: true, // 100% fit in a container
+    		tabidentify: 'hor_1', // The tab groups identifier
+    		activate: function(event) { // Callback function if tab is switched
+    			var $tab = $(this);
+    			var $info = $('#nested-tabInfo');
+    			var $name = $('span', $info);
+    			$name.text($tab.text());
+    			$info.show();
+    		}
+    	});
+    });
+  	window.onload = function () {
+  		document.getElementById("password1").onchange = validatePassword;
+  		document.getElementById("password2").onchange = validatePassword;
+  		document.getElementById("yes").onchange = YesVolunteer;
+  		document.getElementById("no").onchange = NoVolunteer;
+  	}
+  	function validatePassword(){
+  		var pass2=document.getElementById("password2").value;
+  		var pass1=document.getElementById("password1").value;
+  		if(pass1!=pass2)
+  			document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+  		else
+  			document.getElementById("password2").setCustomValidity('');
+  		if(pass1.length < 6)
+  			document.getElementById("password1").setCustomValidity("Password atlest 6 Characters");
+  		else
+  			document.getElementById("password1").setCustomValidity('');
+  	}
+  	function YesVolunteer(){
+  		document.getElementById('Available').disabled = false;
+  		document.getElementById('Available').selectedIndex = 1;
+  	}
+  	function NoVolunteer(){
+  		document.getElementById('Available').disabled = true;
+  		document.getElementById('Available').selectedIndex = 0;
+  	}
+  </script>
+  <!--//tabs-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</html>
+<script src="js/easyResponsiveTabs.js"></script>

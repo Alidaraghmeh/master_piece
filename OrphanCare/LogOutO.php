@@ -1,0 +1,11 @@
+<?php
+session_start();
+	unset($_SESSION["emailO"]);
+	unset($_SESSION["passwordO"]);
+	unset($_SESSION["idOrph"]);
+	unset($_SESSION["nameOrph"]);
+	unset($_SESSION["nameO"]);
+	unset($_SESSION["phoneO"]);
+	unset($_SESSION["addressO"]);
+	header("location:JoinUs.html");
+?>

@@ -1,0 +1,9 @@
+<?php
+session_start();
+	unset($_SESSION["emailU"]);
+	unset($_SESSION["passwordU"]);
+	unset($_SESSION["nameU"]);
+	unset($_SESSION["NIDU"]);
+	unset($_SESSION["phoneU"]);
+	header("location:JoinUs.html");
+?>
